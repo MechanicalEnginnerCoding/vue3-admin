@@ -10,7 +10,7 @@ const baseUrl = {
 }
 
 // https://vitejs.dev/config/
-export default ({ mode }) =>  defineConfig({
+export default ({ mode }) => defineConfig({
   plugins: [
     vue(),
     vitePluginImport([
@@ -38,5 +38,5 @@ export default ({ mode }) =>  defineConfig({
         rewrite: path => path.replace(/^\/api/, '')
       }
     }
-  }
+  },
 })

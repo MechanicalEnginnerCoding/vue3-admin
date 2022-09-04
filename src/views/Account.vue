@@ -1,6 +1,7 @@
 <template>
   <el-card class="account-container">
-    <el-form :model="nameForm" :rules="rules" ref="nameRef" label-width="80px" label-position="right" class="demo-ruleForm">
+    <el-form :model="nameForm" :rules="rules" ref="nameRef" label-width="80px" label-position="right"
+      class="demo-ruleForm">
       <el-form-item label="登录名：" prop="loginName">
         <el-input style="width: 200px" v-model="nameForm.loginName"></el-input>
       </el-form-item>
@@ -13,7 +14,8 @@
     </el-form>
   </el-card>
   <el-card class="account-container">
-    <el-form :model="passForm" :rules="rules" ref="passRef" label-width="80px" label-position="right" class="demo-ruleForm">
+    <el-form :model="passForm" :rules="rules" ref="passRef" label-width="80px" label-position="right"
+      class="demo-ruleForm">
       <el-form-item label="原密码：" prop="oldpass">
         <el-input style="width: 200px" v-model="passForm.oldpass"></el-input>
       </el-form-item>
@@ -107,7 +109,7 @@ export default {
 </script>
 
 <style>
-  .account-container {
-    margin-bottom: 20px;
-  }
+.account-container {
+  margin-bottom: 20px;
+}
 </style>
